@@ -7,5 +7,5 @@ services:
       - ./code:/application/code/
       - /etc/osbox:/db
     ports:
-      - 2015:9501
+      - 2015:80
     restart: unless-stopped
