@@ -1,0 +1,14 @@
+version: "2.1"
+services:
+  sqlitebrowser:
+    image: acttaiwan/phpliteadmin
+    container_name: phpliteadmin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Amsterdam
+    volumes:
+      - /etc/osbox:/db
+    ports:
+      - 2015:2015
+    restart: unless-stopped
