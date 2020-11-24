@@ -1,10 +1,10 @@
 version: "2.1"
 services:
   sqlitebrowser:
-    image: webdevops/php-nginx:7.0
-    container_name: phpliteadmin
+    image: richarvey/nginx-php-fpm
+    container_name: sw-osbox-phpliteadmin
     volumes:
-      - ./code:/application/code/
+      - ./code:/var/www/html
       - /etc/osbox:/db
     ports:
       - 2015:80
