@@ -13,7 +13,7 @@
 $password = 'admin';
 
 //directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
-$directory = '/db';
+$directory = false;
 
 //whether or not to scan the subdirectories of the above directory infinitely deep
 $subdirectories = false;
@@ -23,7 +23,7 @@ $subdirectories = false;
 $databases = array(
 	array(
 		'path'=> '/db/osbox.db',
-		'name'=> 'OSBox'
+		'name'=> 'osbox.db'
 	),
 );
 
