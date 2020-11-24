@@ -6,7 +6,7 @@ services:
     volumes:
       - ./code:/var/www/html
       - /etc/osbox:/db
-    env:
+    environment:
       - user=root
     ports:
       - 2015:80
