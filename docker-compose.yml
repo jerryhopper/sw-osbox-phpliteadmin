@@ -7,7 +7,7 @@ services:
       - ./code:/var/www/html
       - /etc/osbox:/db
     env:
-      user=1000:1000
+      user=root
     ports:
       - 2015:80
     restart: unless-stopped
