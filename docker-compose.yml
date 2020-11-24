@@ -1,7 +1,7 @@
 version: "2.1"
 services:
   sqlitebrowser:
-    image: richarvey/nginx-php-fpm
+    image: php:7.2-apache
     container_name: sw-osbox-phpliteadmin
     volumes:
       - ./code:/var/www/html
