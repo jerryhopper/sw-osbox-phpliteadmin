@@ -22,7 +22,7 @@ $subdirectories = false;
 //if any of the databases do not exist as they are referenced by their path, they will be created automatically
 $databases = array(
 	array(
-		'path'=> 'osbox.db',
+		'path'=> '/db/osbox.db',
 		'name'=> 'OSBox'
 	),
 );
